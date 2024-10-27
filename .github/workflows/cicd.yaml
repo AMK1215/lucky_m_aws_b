@@ -34,7 +34,7 @@ jobs:
           aws-region: ${{ vars.AWS_REGION }}
 
       - name: Deploy to S3
-        run: aws s3 sync dist/ s3://{{ var.S3_BUCKET_NAME }} --delete
+        run: aws s3 sync dist/ s3://${{ vars.S3_BUCKET_NAME }} --delete
 
       - name: Create CloudFront invalidation
-        run: aws cloudfront create-invalidation --distribution-id {{ var.CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"
+        run: aws cloudfront create-invalidation --distribution-id ${{ vars.CLOUDFRONT_DISTRIBUTION_ID }} --paths "/*"
