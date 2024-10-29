@@ -1,3 +1,3 @@
-const BASE_URL = 'https://awstest.luckymillion.online/api';
+const BASE_URL = 'https://luckymillion.online/api';
 
 export default BASE_URL;
