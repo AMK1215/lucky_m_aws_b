@@ -34,7 +34,7 @@ const HomePage = () => {
           <i className="fas fa-xmark" onClick={adsClose}></i>
         </Modal.Header>
         <Modal.Body>
-          <img src={ads?.img_url} className='img-fluid rounded-3' />
+          <img src={ads?.image} className='img-fluid rounded-3' />
           <p className='my-2 fw-semibold text-center'>ငွေသွင်းငွေထုတ်အတွက် အကြောင်းကြားစာ ဆက်သွယ်နိုင်ပါတယ် အခုပဲ လိုင်းစိမ်းကို အပ်လိုက်ပါ Add Line</p>
           <p className="text-center fw-semibold mb-2">
           {contact.name && (

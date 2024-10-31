@@ -6,12 +6,14 @@ import BASE_URL from '../hooks/baseURL'
 
 const Banners = () => {
   const {data:banners} = useFetch(BASE_URL + '/banner');
+  // console.log(banners);
+  
 
   return (
         <Carousel>
             {banners && banners.map((banner,index)=>{
                 return  <Carousel.Item key={index}>
-                <img className='banner' src={banner.img_url} />
+                <img className='banner' src={banner.image} />
               </Carousel.Item>
             })}
       
